@@ -64,8 +64,8 @@ android {
 
             debuggable false
 
-            buildConfigField "String", "BUGSENSE_LICENSE", "\"" + bugsense_release + "\""
-            buildConfigField "String", "ANALYTICS_TRACK_ID", "\"" + analytics_track_id_release + "\""
+            //buildConfigField "String", "BUGSENSE_LICENSE", "\"" + bugsense_release + "\""
+            //buildConfigField "String", "ANALYTICS_TRACK_ID", "\"" + analytics_track_id_release + "\""
 
             signingConfig project.hasProperty('android_keystore') ? signingConfigs.release : signingConfigs.debug
 
@@ -82,8 +82,8 @@ android {
 
             versionNameSuffix "-DEBUG"
 
-            buildConfigField "String", "BUGSENSE_LICENSE", "\"" + bugsense_debug + "\""
-            buildConfigField "String", "ANALYTICS_TRACK_ID", "\"" + analytics_track_id_debug + "\""
+            //buildConfigField "String", "BUGSENSE_LICENSE", "\"" + bugsense_debug + "\""
+            //buildConfigField "String", "ANALYTICS_TRACK_ID", "\"" + analytics_track_id_debug + "\""
         }
 
         CI {
