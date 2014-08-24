@@ -228,7 +228,7 @@ public class APL
         ConnectivityManager connManager = (ConnectivityManager) gContext.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         ProxyConfiguration proxyConfig = null;
-        if (proxy != Proxy.NO_PROXY)
+        if (proxy == Proxy.NO_PROXY)
         {
             proxyConfig = new ProxyConfiguration(ProxySetting.STATIC, null, null, null, null);
         }
